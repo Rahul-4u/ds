@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .rusmeLi {
+    @apply text-xl  hover:shadow-xl text-slate-400 py-2 border-[1px] cursor-pointer border-cyan-700 text-center  justify-center flex;
+  }
+}
