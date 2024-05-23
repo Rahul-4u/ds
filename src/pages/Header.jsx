@@ -8,7 +8,7 @@ export default function Header() {
 
 
   return (
-    <div className='w-full bg-black  py-2'>
+    <div className='w-full fixed z-50 bg-black  py-2'>
     <div className='flex container mx-auto items-center  justify-between '>
       <div className='flex items-center gap-3 '>
         <img className=' w-[35px] h-[35px] rounded-full ' src="logo.png" alt="" />
@@ -46,7 +46,7 @@ export default function Header() {
 
           {
             Show && (
-              <div className=' w-[100%] h-screen absolute z-50 inline-block bg-slate-800 left-0 top-15'>
+              <div className=' w-[100%] fixed h-screen absolute z-50 inline-block bg-slate-800 left-0 top-15'>
                 <ul className='  justify-between items-center  '>
         <li className=' nav-link '>
               <Link to={'/'} >Home</Link>
