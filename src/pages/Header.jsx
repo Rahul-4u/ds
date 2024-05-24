@@ -40,8 +40,8 @@ export default function Header() {
          
         </ul>
 
-        <span onClick={()=>setShow (!Show)}  className=' text-gray-300 mdl:hidden text-[30px]' >
-         {Show ?  <RiCloseLargeFill /> : <FiMenu/>
+        <span onClick={()=>setShow (!Show)}  className=' cursor-pointer text-gray-300 mdl:hidden text-[30px]' >
+         {Show ?  <RiCloseLargeFill className='text-red-500 font-bold' /> : <FiMenu className='text-green-600'/>
 }
         </span>
 
