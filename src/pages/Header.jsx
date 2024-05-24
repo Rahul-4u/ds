@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
-import { FiMenu } from 'react-icons/fi'
+import { FiLock, FiMenu } from 'react-icons/fi'
 import { Link } from 'react-router-dom'
+import { RiCloseLargeFill } from "react-icons/ri";
+
 
 
 export default function Header() {
@@ -39,14 +41,15 @@ export default function Header() {
         </ul>
 
         <span onClick={()=>setShow (!Show)}  className=' text-gray-300 mdl:hidden text-[30px]' >
-         <FiMenu/>
+         {Show ?  <RiCloseLargeFill /> : <FiMenu/>
+}
         </span>
 
         <span onClick={()=> setShow (false)} className=' text-green-500 text-2xl  w-10 h-10 cursor-pointer mdl:hidden'>
 
           {
             Show && (
-              <div className=' w-[100%] fixed h-screen absolute z-50 inline-block bg-slate-800 left-0 top-15'>
+              <div className=' w-[100%] fixed h-screen absolute z-50 inline-block bg-slate-800 left-0 top-[51px]'>
                 <ul className='  justify-between items-center  '>
         <li className=' nav-link '>
               <Link to={'/'} >Home</Link>
